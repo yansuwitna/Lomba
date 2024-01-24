@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .textbox,
+        .button,
+        .dropdown,
+        .checkbox,
+        .radio,
+        .label-checkbox,
+        .label-radio,
+        .dropdown-calendar,
+        .range,
+        .progress-bar {
+            margin-bottom: 15px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button,
+        .checkbox,
+        .radio,
+        .label-checkbox,
+        .label-radio {
+            margin-top: 5px;
+        }
+
+        .checkbox label,
+        .radio label {
+            margin-left: 5px;
+        }
+
+        .range,
+        .progress-bar {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 5px;
+        }
+    </style>
+    <title>UI Kit</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="textbox">
+            <label for="text-input">Text Box:</label>
+            <input type="text" id="text-input" placeholder="Enter text">
+        </div>
+
+        <div class="button">
+            <button>Button</button>
+        </div>
+
+        <div class="dropdown">
+            <label for="dropdown-select">Drop-down List:</label>
+            <select id="dropdown-select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Checkbox</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" id="radio">
+            <label for="radio">Radio Button</label>
+        </div>
+
+        <div class="label-checkbox">
+            <label for="label-checkbox">Label with Checkbox:</label>
+            <input type="checkbox" id="label-checkbox">
+        </div>
+
+        <div class="label-radio">
+            <label for="label-radio">Label with Radio Button:</label>
+            <input type="radio" id="label-radio">
+        </div>
+
+        <div class="dropdown-calendar">
+            <label for="calendar-input">Drop-down Calendar Input:</label>
+            <input type="date" id="calendar-input">
+        </div>
+
+        <div class="range">
+            <label for="range-input">Range:</label>
+            <input type="range" id="range-input" min="0" max="100" value="50">
+        </div>
+
+        <div class="progress-bar">
+            <span style="width: 70%;"></span>
+        </div>
+    </div>
+</body>
+
+</html>

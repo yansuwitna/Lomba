@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .site {
+            grid-area: site;
+            background-color: rgb(255, 174, 0) ;
+            height: 80px;
+        }
+
+        .nav1 {
+            grid-area: nav1;
+            background-color: rgb(221, 157, 221) ;
+            height: 80px;
+        }
+
+        .nav2 {
+            grid-area: nav2;
+            background-color: rgb(221, 157, 221) ;
+            height: 80px;
+        }
+
+        .nav3 {
+            grid-area: nav3;
+            background-color: rgb(221, 157, 221) ;
+            height: 80px;
+        }
+
+        .pos1 {
+            grid-area: pos1;
+            background-color: rgb(144, 187, 216) ;
+            height: 80px;
+        }
+
+        .meta {
+            grid-area: meta;
+            background-color: rgb(144, 216, 162) ;
+            height: auto;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: rgb(192, 192, 192) ;
+            height: auto;
+        }
+
+        .image {
+            grid-area: image;
+            background-color: rgb(247, 230, 0) ;
+            height: auto;
+        }
+
+        .side {
+            grid-area: side;
+            background-color: rgb(238, 128, 3) ;
+            height: 160px;
+        }
+        .ads {
+            grid-area: ads;
+            background-color: rgb(211, 11, 230) ;
+            height: 160px;
+        }
+
+        .other {
+            grid-area: other;
+            background-color: rgb(28, 128, 50) ;
+            height: 160px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgba(134, 128, 89, 0.548) ;
+            height: 80px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'site site site site site site site site site nav1 nav1 nav1 nav2 nav2 nav2 nav3 nav3 nav3'
+                'pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 pos1 side side side side'
+                'meta meta meta meta main main main main main main main main main main side side side side'
+                'meta meta meta meta main main main main main main main main main main ads ads ads ads'
+                'meta meta meta meta image image image image image image image image image image ads ads ads ads'
+                'meta meta meta meta image image image image image image image image image image other other other other'
+                'meta meta meta meta image image image image image image image image image image other other other other'
+                'footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer'
+                ;
+                
+                
+            gap: 3px;
+            background-color: #edf0f3;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="site">Site Title</div>
+        <div class="nav1">Nav 1</div>
+        <div class="nav2">Nav 2</div>
+        <div class="nav3">Nav 3</div>
+        <div class="pos1">Post Title</div>
+        <div class="meta">Post Meta</div>
+        <div class="main">Main Content</div>
+        <div class="image">Main Content Image</div>
+        <div class="side">Sidebar</div>
+        <div class="ads">Ads</div>
+        <div class="other">Other Stuffs</div>
+        <div class="footer">@2018 Footer</div>
+    </div>
+
+</body>
+
+</html>
