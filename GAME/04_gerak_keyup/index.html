@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #kotak {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 2px;
+        border: solid 1px black;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div id="kotak"></div>
+
+
+    <script>
+        const ob = document.getElementById("kotak");
+        var x = 0;
+        var y = 0;
+
+        function kanan() {
+            x += 20;
+            ob.style.left = x + 'px';
+        }
+
+        function kiri() {
+            x -=20;
+            ob.style.left = x + 'px';
+        }
+
+        function bawah() {
+            y +=20;
+            ob.style.top = y + 'px';
+        }
+
+        function atas() {
+            y -=20;
+            ob.style.top = y + 'px';
+        }
+
+        document.addEventListener('keyup', function (e) {
+            var id = setInterval(kanan, 1000);
+            setInterval(2000);
+            clearInterval(id);
+            if (e.code === 'ArrowRight') {
+                setInterval(kanan, 1000);
+            }
+            if (e.code === 'ArrowLeft') {
+                setInterval(kiri, 100);
+            }
+            if (e.code === 'ArrowDown') {
+                setInterval(bawah, 1000);
+            }
+
+            if (e.code === 'ArrowUp') {
+                setInterval(atas, 1000);
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

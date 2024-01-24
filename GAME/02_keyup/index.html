@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #kotak {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 2px;
+        border: solid 1px black;
+        position: relative;
+    }
+</style>
+
+<body>
+    <h1 id="tampil"></h1>
+
+
+    <script>
+        document.addEventListener('keyup', function (e) {
+            document.getElementById('tampil').innerHTML = e.code;
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #kotak{
+        width:20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 2px;
+        border: solid 1px black;
+        position: relative; 
+    }
+</style>
+
+<body>
+    <h3 id="tmp"></h3> <br>
+    <div id="kotak"></div>
+
+
+    <script>
+        const ob = document.getElementById("kotak");
+        const tmp = document.getElementById("tmp");
+        var posisi = 0;
+        function geser() {
+            posisi++;
+            ob.style.left = posisi + 'px';
+
+            if (posisi >= window.innerWidth) {
+                posisi = 0;
+            }
+
+            tmp.innerHTML = posisi;
+
+        }
+
+        setInterval(geser, 1);
+
+    </script>
+</body>
+</html>
